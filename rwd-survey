@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Class sign-up form</title>
+  </head>
+  <body>
+    <h1 id="title">Class sign-up form</h1>
+    <p id="description">Please fill in this form to sign up for our class.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age (optional) <input id="number" type="number" min="13" max="99" placeholder="Enter your age"></label>
+        <label for="role">Which option best describes your current role?
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full-time job</option>
+            <option value="3">Full-time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Have you completed your foundation courses?</p>
+        <label for="finish-yes"><input id="finish-yes" type="radio" name="foundation-courses" class="inline" value="1"/> Yes</label>
+        <label for="finish-no"><input id="finish-no" type="radio" name="foundation-courses" class="inline" value="0"/> No</label>
+        <p>Is your CGPA 2.00 or above?</p>
+        <label for="CGPA-yes"><input id="CGPA-yes" type="radio" name="CGPA" class="inline" value="1"/> Yes</label>
+        <label for="CGPA-no"><input id="CGPA-no" type="radio" name="CGPA" class="inline" value="0"/> No</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments"><textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your commnets or suggestions here..."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="checkbox" class="inline" value="1">I want to recieve updates via email</label>
+        <label><input type="checkbox"  class="inline" value="1">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    <form>
+  </body>
+</html>
